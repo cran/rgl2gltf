@@ -39,7 +39,7 @@ Gltf <- R6Class("gltf",
     #' The glTF standard requires `min` and `max` values in
     #' accessors, whereas other uses of buffers may not.
     #' This function stores in the usual way using the
-    #' [`Buffer$addAccessor()`][Buffer] method, and then adds
+    #' [`Buffer$addAccessor()`][rgl::Buffer] method, and then adds
     #' `min` and `max` values.
     #'
     #' The standard also doesn't support signed 4 byte integers
@@ -447,6 +447,8 @@ Gltf <- R6Class("gltf",
         result <- list()
       else {
         material <- self$getMaterial(n)
+        if (is.null(alphaMode <- material$alphaMode))
+          alphaMode <- "OPAQUE"
         result <- list(color = "white", alpha = 1)
         if (!is.null(pbrm <- material$pbrMetallicRoughness)) {
           if (!is.null(col <- unlist(pbrm$baseColorFactor))) {
@@ -459,6 +461,10 @@ Gltf <- R6Class("gltf",
             result$texture <- texturefile
             texture <- self$getTexture(texnum)
             result$gltftexCoord <- texture$texCoord
+            if (alphaMode == "OPAQUE")
+              result$textype <- "rgb"
+            else
+              result$textype <- "rgba"
           }
         }
         if (!is.null(col <- unlist(material$emissiveFactor)))
@@ -476,6 +482,8 @@ Gltf <- R6Class("gltf",
           result <- lapply(result, unlist)
         } else
           result$specular <- "gray10"
+        if (alphaMode == "OPAQUE")
+          result$alpha <- 1
       }
       result
     },
