@@ -1,6 +1,6 @@
-d64e388bec9596ca27f7622fc32e24f9 *DESCRIPTION
+c62b14a317ab04bec5db361d0dee0ca7 *DESCRIPTION
 f376b6d46020c40e094498727cddb3bc *NAMESPACE
-d06290ca16e9de6341e27e2b79b0571b *NEWS.md
+02a4cedf982428e1018dd3a962fe6729 *NEWS.md
 436f2e4186848be03e10ec18f8ae07cd *R/PBR.R
 ddef0c8e78afea0bd4ca2788bae2b481 *R/as.gltf.R
 971f2cc71d5bc5c163a638f37daa5643 *R/as.mesh.R
@@ -10,7 +10,7 @@ ddef0c8e78afea0bd4ca2788bae2b481 *R/as.gltf.R
 f83cbcc78018cad381ae6737bae561d0 *R/findNamedVectors.R
 c81eab45e7a38ea495a2371fe5e94cae *R/getTangents.R
 3a396f9c8dcc648c985e70991a73c036 *R/gltfObj.R
-ee2ed1f26641be0f0931074e9ecc1e78 *R/gltfWidget.R
+1c4c41597e1c45945c00cc760b729852 *R/gltfWidget.R
 c6657973d7f95a1e8923c4701b02a9a0 *R/playgltf.R
 00304c8f9dfd027073f3d70eb6a6c8a5 *R/plot3d.R
 68262445f09207a6c5340b60c3c3bcd2 *R/print.R
@@ -26,7 +26,7 @@ d6e85ad57af10ec9877025f4e008ef6c *R/write.R
 ce2fe6bc2f6611816ab5ac5d70144e24 *build/vignette.rds
 9c65bdc548e6260570bbf0e0467fa3a9 *inst/doc/shininess.R
 6b676e9484fde7b308b8df57719505f4 *inst/doc/shininess.Rmd
-50bb04ad62ef0029162144165e3df291 *inst/doc/shininess.html
+28f665731e8d928c14ab0fa194bc026d *inst/doc/shininess.html
 9adf67a0ebbbd68966657be604201727 *inst/glb/RiggedSimple.glb
 95a3b5c6a530a39e90651f872f211d04 *inst/javascript/gltfAnimate/gltfAnimate.js
 3612769f12db68cef34edf4ffdd01c43 *inst/shaders/pbr-frag.glsl

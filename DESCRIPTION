@@ -1,7 +1,7 @@
 Package: rgl2gltf
 Type: Package
 Title: Read and Write '.gltf' and '.glb' Files
-Version: 1.0.5
+Version: 1.0.7
 Authors@R: c(person("Duncan", "Murdoch", role = c("aut", "cre"),
                      email = "murdoch.duncan@gmail.com"),
              person("Morten S.", "Mikkelsen", role = c("cph")))
@@ -18,8 +18,8 @@ Suggests: rmarkdown, knitr, misc3d, V8, manipulateWidget, png, jpeg
 VignetteBuilder: knitr, rmarkdown
 RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2024-09-24 14:18:37 UTC; murdoch
+Packaged: 2024-11-19 17:02:38 UTC; murdoch
 Author: Duncan Murdoch [aut, cre],
   Morten S. Mikkelsen [cph]
 Repository: CRAN
-Date/Publication: 2024-09-24 14:40:02 UTC
+Date/Publication: 2024-11-21 08:40:01 UTC
